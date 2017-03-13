@@ -184,12 +184,15 @@ a:hover {
 
 
 /*Media Queries*/
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .bill-content {
     width: 95%;
   }
   .down-arrow {
     margin-top: 640px;
+  }
+  .history {
+    margin-bottom: 100px;
   }
   .history-p {
     padding-top: 60px;
@@ -199,7 +202,7 @@ a:hover {
     padding-top: 100px;
   }
   .skills {
-    margin-bottom: -100px;
+    padding-bottom: 100px;
   }
   .bill-white {
     margin-top: 100px;
