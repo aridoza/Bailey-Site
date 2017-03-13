@@ -1,0 +1,306 @@
+* {
+  box-sizing: border-box;
+}
+
+/*Element Selectors*/
+body {
+  font-family: Lora, sans-serif;
+  margin: 0;
+  background-color: lightgray;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+
+/*Class Selector*/
+
+/*Header Section*/
+.main-header {
+  font-size: 30px;
+  letter-spacing: 4px;
+  color: #ffffe0;
+  min-height: 980px;
+  padding-top: 150px;
+  text-align: center;
+  background: linear-gradient(#fff0f5, transparent 90%),
+              linear-gradient(to top, lightgray, transparent 33%),
+              lavenderblush url('../img/IMG_1863.JPG') no-repeat;
+  background-size: cover;
+}
+
+.title {
+  font-weight: 200;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 5px 5px rgba(0,0,0, .8);
+  margin: 12px 0 0;
+  line-height: 1.1;
+}
+
+.down-arrow {
+  width: 50px;
+  margin-top: 680px;
+}
+
+.bill-content {
+  margin: auto;
+  max-width: 90vw;
+  min-height: 900px;
+}
+/*Applies to all section headers*/
+.bill-content h2 {
+  text-align: center;
+  font-size: 2em;
+  color: #fff0f5;
+  text-shadow: 5px 5px 5px #808080;
+}
+
+.bill-nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #f08080;
+}
+.bill-nav a {
+  font-size: 20px;
+  color: #fff0f5;
+}
+
+/*Introduction Section*/
+.bill-intro-div {
+  min-height: 900px;
+}
+.bill-intro-p {
+  width: 45%;
+  padding-top: 180px;
+  margin-left: 2%;
+  /*float: left;*/
+}
+
+.apples-img {
+  /*height: 550px;*/
+  width: 40%;
+  /*float: right;*/
+  margin-left: 58%;
+  margin-top: -200px;
+}
+
+
+.top-border {
+  border-top: 3px solid #f08080;
+  margin-top: 50px;
+}
+
+/*History Section*/
+
+.history {
+  min-height: 900px;
+}
+
+.history-p {
+  width: 45%;
+  font-size: 20px;
+  margin-left: 50%;
+  margin-top: -580px;
+}
+
+.bill-couch {
+  width: 40%;
+  padding-top: 50px;
+}
+
+/*Hobbies Section*/
+.hobbies {
+  min-height: 900px;
+}
+
+.hobbies-list {
+  width: 40%;
+  margin-top: 220px;
+  font-size: 20px;
+}
+
+.bill-staredown {
+  width: 40%;
+  margin-left: 58%;
+  margin-top: -250px;
+}
+/*Title Text for each list*/
+#hobbies-list-title, #skills-list-title {
+  list-style-type: none;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #f08080;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+/*Skills Section*/
+.skills {
+  min-height: 900px;
+}
+
+.bill-white {
+  width: 45%;
+}
+
+.skills-list {
+  font-size: 20px;
+  width: 45%;
+  margin-left: 58%;
+  margin-top: -600px;
+}
+
+/*Float Clearfix*/
+/*.group:after {
+  content: "",
+  display: table;
+  clear: both;
+}*/
+
+.main-footer {
+  padding-top: 50px;
+  margin-top: 200px;
+  text-align: center;
+  border-top: 4px solid #fff0f5;
+  margin-bottom: 50px;
+}
+
+
+/*Pseudo-Class Selectors*/
+a:hover {
+  color: firebrick;
+}
+
+
+/*Media Queries*/
+@media (max-width: 1024px) {
+  .bill-content {
+    width: 95%;
+  }
+  .down-arrow {
+    margin-top: 640px;
+  }
+  .history-p {
+    padding-top: 60px;
+    text-align: center;
+  }
+  .bill-couch {
+    padding-top: 100px;
+  }
+  .skills {
+    margin-bottom: -100px;
+  }
+  .bill-white {
+    margin-top: 100px;
+  }
+  .skills-list {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bill-content {
+    width: 100%;
+  }
+  .main-header {
+    font-size: 22px;
+    max-height: 650px;
+  }
+  .down-arrow {
+    visibility: hidden;
+  }
+  .bill-intro-p {
+    padding-top: 100px;
+  }
+  .apples-img {
+    width: 48%;
+    margin-top: -260px;
+    margin-left: 52%;
+  }
+  .bill-intro-div, .history, .hobbies, .skills {
+    min-height: 700px;
+  }
+  .history-p {
+    font-size: 16px;
+    padding-top: 160px;
+  }
+  .hobbies-list, .skills-list {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  .bill-content {
+    width: 100%;
+  }
+  .main-header {
+    min-height: 600px;
+  }
+  .title {
+    font-size: 15px;
+    padding-top: 160px;
+  }
+  .bill-intro-div, .history, .hobbies, .skills {
+    min-height: 400px;
+  }
+  .bill-intro-p,
+  .history-p,
+  .hobbies-list,
+  .skills-list {
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .apples-img,
+  .bill-couch,
+  .bill-staredown,
+  .bill-white {
+    width: 350px;
+    margin: 0;
+    padding: 0;
+    height: 350px;
+    border-radius: 50%;
+  }
+  .bill-intro-p, .history-p {
+    text-align: center;
+    line-height: 1.4rem;
+  }
+  .bill-intro-p {
+    padding-bottom: 50px;
+  }
+  .history-p {
+    font-size: 12px;
+    padding-top: 30px;
+  }
+  .hobbies-list {
+    text-align: center;
+    list-style-type: none;
+    padding-bottom: 40px;
+    line-height: 1.4rem;
+    font-style: italic;
+  }
+  .skills-list {
+    text-align: center;
+    list-style-type: none;
+    line-height: 1.4rem;
+    font-style: italic;
+  }
+  .main-footer {
+    font-size: 12px;
+  }
+  .section-header-text {
+    padding-bottom: 35px;
+  }
+}
