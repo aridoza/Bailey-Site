@@ -84,6 +84,7 @@ img {
   width: 45%;
   padding-top: 180px;
   margin-left: 2%;
+  line-height: 1.7rem;
   /*float: left;*/
 }
 
@@ -113,6 +114,7 @@ img {
   font-size: 20px;
   margin-left: 50%;
   margin-top: -580px;
+  line-height: 1.7rem;
 }
 
 .bill-couch {
@@ -129,6 +131,7 @@ img {
   width: 40%;
   margin-top: 220px;
   font-size: 20px;
+  line-height: 1.7rem;
 }
 
 .bill-staredown {
@@ -160,6 +163,7 @@ img {
   width: 45%;
   margin-left: 58%;
   margin-top: -600px;
+  line-height: 1.7rem;
 }
 
 /*Float Clearfix*/
