@@ -215,10 +215,21 @@ a:hover {
   .skills-list {
     padding-top: 200px;
   }
+  /*Reference for stick nav bar*/
+  .nav-sticky {
+    top: 0;
+    margin-left: -52px;
+    z-index: 10;
+    background-color: rgba(169,169,169, 0.7);
+    position: fixed;
+    width: 100%;
+    padding-left: 50px;
+  }
 }
 
 @media (max-width: 768px) {
-  .bill-content {
+  .bill-content,
+  .main-content {
     width: 100%;
   }
   .main-header {
@@ -246,6 +257,20 @@ a:hover {
   .hobbies-list, .skills-list {
     font-size: 16px;
   }
+  .skills-list {
+    padding-top: 190px;
+  }
+}
+
+/*Reference for stick nav bar*/
+.nav-tablet {
+  top: 0;
+  margin-left: -37px;
+  z-index: 10;
+  background-color: rgba(169,169,169, 0.7);
+  position: fixed;
+  width: 100%;
+  padding-left: 50px;
 }
 
 @media (max-width: 425px) {
@@ -313,5 +338,18 @@ a:hover {
   }
   .section-header-text {
     padding-bottom: 35px;
+  }
+  /*Reference for stick nav bar*/
+  .nav-mobile {
+    top: 0;
+    margin-left: -20px;
+    z-index: 10;
+    background-color: rgba(169,169,169, 0.7);
+    position: fixed;
+    width: 100%;
+  }
+  .nav-mobile a,
+  .bill-nav a {
+    font-size: 14px;
   }
 }
