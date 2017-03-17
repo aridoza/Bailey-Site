@@ -34,17 +34,15 @@ $(document).ready( () => {
     }
 
 
-    //for mobile displays
-    if($(window).scrollTop() > 1030 && $(window).width() > 768 && $(window).width() < 1025) {
-      //For laptop displays
+    //for laptop displays
+    if($(window).scrollTop() > 1030 && $(window).width() > 851 && $(window).width() < 1025) {
       $('.bill-nav').addClass('nav-sticky');
-    } else if ($(window).scrollTop() < 1031 && $(window).width() > 768 && $(window).width() < 1025) {
+    } else if ($(window).scrollTop() < 1031 && $(window).width() > 851 && $(window).width() < 1025) {
       $('.bill-nav').removeClass('nav-sticky');
     }
 
     //Tablet display
     if($(window).scrollTop() > 1090 && $(window).width() > 767 && $(window).width() < 850) {
-      //For desktop displays
       $('.bill-nav').addClass('nav-tablet');
     } else if ($(window).scrollTop() < 1091 && $(window).width() > 767 && $(window).width() < 850) {
       $('.bill-nav').removeClass('nav-tablet');
