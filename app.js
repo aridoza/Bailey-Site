@@ -4,11 +4,11 @@ $(document).ready( () => {
   const billContent = document.querySelector('.history');
 
   $(".animsition").animsition({
-    inClass: 'fade-in-right',
-    outClass: 'fade-out-right',
+    inClass: 'fade-in',
+    outClass: 'fade-out',
     linkElement: '.bill-intro-div',
-    inDuration: 1000,
-    outDuration: 500
+    inDuration: 2000,
+    outDuration: 1000
   });
 
   //Make Nav sticky after scroll
