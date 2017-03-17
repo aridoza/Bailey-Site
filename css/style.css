@@ -200,7 +200,7 @@ a:hover {
   }
 }
 
-@media (min-width: 1025px) {
+@media (max-width: 1325px) {
   .nav-desktop {
     top: 0;
     margin-left: -72px;
