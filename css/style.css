@@ -193,7 +193,7 @@ a:hover {
   .nav-2k {
     top: 0;
     width: 95%;
-    margin-left: -80px;
+    margin-left: -90px;
     z-index: 10;
     background-color: rgba(169,169,169, 0.7);
     position: fixed;
