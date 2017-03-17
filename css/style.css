@@ -189,7 +189,24 @@ a:hover {
 
 
 /*Media Queries*/
-@media (min-width: 1024px) {
+@media (min-width: 1500px) {
+  .nav-desktop {
+    margin-left: -52px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .nav-desktop {
+    top: 0;
+    margin-left: -72px;
+    z-index: 10;
+    background-color: rgba(169,169,169, 0.7);
+    position: fixed;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
   .bill-content {
     width: 95%;
   }
@@ -223,7 +240,6 @@ a:hover {
     background-color: rgba(169,169,169, 0.7);
     position: fixed;
     width: 100%;
-    padding-left: 50px;
   }
 }
 
@@ -270,7 +286,6 @@ a:hover {
   background-color: rgba(169,169,169, 0.7);
   position: fixed;
   width: 100%;
-  padding-left: 50px;
 }
 
 @media (max-width: 425px) {

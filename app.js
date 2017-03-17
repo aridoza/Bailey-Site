@@ -14,11 +14,22 @@ $(document).ready( () => {
   //Make Nav sticky after scroll
   $(window).scroll(function () {
     console.log($(window).scrollTop());
-    //for mobile displays
-    if($(window).scrollTop() > 1030 && $(window).width() > 768) {
+
+    //Desktop Display
+    if($(window).scrollTop() > 1090 && $(window).width() > 1026) {
+      console.log($(window).width());
       //For desktop displays
+      $('.bill-nav').addClass('nav-desktop');
+    } else if ($(window).scrollTop() < 1091 && $(window).width() > 1026) {
+      $('.bill-nav').removeClass('nav-desktop');
+    }
+
+
+    //for mobile displays
+    if($(window).scrollTop() > 1030 && $(window).width() > 768 && $(window).width() < 1025) {
+      //For laptop displays
       $('.bill-nav').addClass('nav-sticky');
-    } else if ($(window).scrollTop() < 1031 && $(window).width() > 768) {
+    } else if ($(window).scrollTop() < 1031 && $(window).width() > 768 && $(window).width() < 1025) {
       $('.bill-nav').removeClass('nav-sticky');
     }
 
@@ -29,6 +40,8 @@ $(document).ready( () => {
     } else if ($(window).scrollTop() < 1091 && $(window).width() > 767 && $(window).width() < 850) {
       $('.bill-nav').removeClass('nav-tablet');
     }
+
+
 
 
   });
