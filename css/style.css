@@ -189,9 +189,14 @@ a:hover {
 
 
 /*Media Queries*/
-@media (min-width: 1500px) {
-  .nav-desktop {
-    margin-left: -52px;
+@media (min-width: 1400px) {
+  .nav-2k {
+    top: 0;
+    margin-left: -82px;
+    z-index: 10;
+    background-color: rgba(169,169,169, 0.7);
+    position: fixed;
+    width: 100%;
   }
 }
 

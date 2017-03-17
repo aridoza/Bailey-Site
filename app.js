@@ -15,12 +15,21 @@ $(document).ready( () => {
   $(window).scroll(function () {
     console.log($(window).scrollTop());
 
+    //2K Display
+    if($(window).scrollTop() > 1090 && $(window).width() > 1400) {
+      console.log($(window).width());
+      //For desktop displays
+      $('.bill-nav').addClass('nav-2k');
+    } else if ($(window).scrollTop() < 1091 && $(window).width() > 1400) {
+      $('.bill-nav').removeClass('nav-2k');
+    }
+
     //Desktop Display
-    if($(window).scrollTop() > 1090 && $(window).width() > 1026) {
+    if($(window).scrollTop() > 1090 && $(window).width() > 1026 && $(window).width() < 1399) {
       console.log($(window).width());
       //For desktop displays
       $('.bill-nav').addClass('nav-desktop');
-    } else if ($(window).scrollTop() < 1091 && $(window).width() > 1026) {
+    } else if ($(window).scrollTop() < 1091 && $(window).width() > 1026 && $(window).width() < 1399) {
       $('.bill-nav').removeClass('nav-desktop');
     }
 
